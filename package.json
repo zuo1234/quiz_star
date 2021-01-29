@@ -1,0 +1,27 @@
+{
+  "name": "quiz-star",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.4.0",
+    "@babel/preset-react": "^7.12.10",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.2.1",
+    "antd": "^4.11.1",
+    "antd-dayjs-webpack-plugin": "^1.0.6",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "less": "^4.1.0",
+    "less-loader": "^7.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react_ujs": "^2.6.1",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
