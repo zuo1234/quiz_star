@@ -4,6 +4,6 @@ class Admins::QuizController < Admins::ApplicationController
   end
 
   def new
-    
+    @quiz = Quiz.new
   end
 end
