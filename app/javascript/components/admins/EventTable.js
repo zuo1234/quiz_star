@@ -3,6 +3,9 @@ import Event from "./Event"
 
 
 class EventTable extends React.Component {
+  handleDelete = (event) => {
+    this.props.handleDelete(event);
+  }
   render() {
     return(
       <table className="table table-striped">
@@ -18,7 +21,7 @@ class EventTable extends React.Component {
           <React.Fragment>
             {
               this.props.events.map((event, index) => {
-                  return <Event key={index} event={event}/>
+                  return <Event key={index} event={event} handleDelete={this.handleDelete}/>
                 }
               )
             }

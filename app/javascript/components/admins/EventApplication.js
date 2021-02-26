@@ -10,7 +10,6 @@ class EventApplication extends React.Component {
 　　this.state = {events: []};
 　}
   componentDidMount() {
-    console.log("aaaa")
     this.getDataFromApi();
   }
   getDataFromApi() {
@@ -25,12 +24,16 @@ class EventApplication extends React.Component {
       }
     });
   }
-  handleAdd(event) {
-    console.log(this)
-    console.log(self)
-    // var events = this.state.events;
-    // events.push(event);
-    // this.setState({ events: events });
+  handleAdd = (event) => {
+    var events = this.state.events;
+    events.push(event);
+    this.setState({ events: events });
+  }
+  handleDelete = (event) => {
+    var events = this.state.events.slice();
+    var index = events.indexOf(event);
+    events.splice(index, 1);
+    this.setState({ events: events });
   }
   render() {
     return(
@@ -44,7 +47,7 @@ class EventApplication extends React.Component {
             <NewForm handleAdd={this.handleAdd} />
           </div>
           <div className="col-md-12">
-            <EventTable events={this.state.events} />
+            <EventTable events={this.state.events} handleDelete={this.handleDelete} />
           </div>
         </div>
       </div>
