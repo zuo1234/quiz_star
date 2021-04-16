@@ -8,13 +8,14 @@ class EventTable extends React.Component {
   }
   render() {
     return(
-      <table className="table table-striped">
+      <table className="table-auto mx-auto m-0">
         <thead>
           <tr>
-            <th className="col-md-3">Name</th>
-            <th className="col-md-2">Date</th>
-            <th className="col-md-3">Place</th>
-            <th className="col-md-4">Description</th>
+            <th className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium bg-green-100  ">Name</th>
+            <th className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium bg-green-100  ">Date</th>
+            <th className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium bg-green-100  ">Place</th>
+            <th className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium bg-green-100  ">Description</th>
+            <th className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium bg-green-100  "></th>
           </tr>
         </thead>
         <tbody>

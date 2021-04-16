@@ -37,16 +37,16 @@ class EventApplication extends React.Component {
   }
   render() {
     return(
-      <div className="container">
-        <div className="jumbotron">
+      <div className="container m-auto px-4 tw-text-center">
+        <div className="">
           <h1>ReactJS Tutorial</h1>
           <p>by Piotr Jaworski</p>
         </div>
-        <div className="row">
-          <div className="col-md-8">
+        <div className="">
+          <div className="">
             <NewForm handleAdd={this.handleAdd} />
           </div>
-          <div className="col-md-12">
+          <div className="tw-text-center">
             <EventTable events={this.state.events} handleDelete={this.handleDelete} />
           </div>
         </div>

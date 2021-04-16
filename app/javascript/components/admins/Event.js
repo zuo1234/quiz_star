@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from 'prop-types';
+import { Button } from 'antd';
 
 
 class Event extends React.Component {
@@ -22,15 +23,17 @@ class Event extends React.Component {
     var event = this.props.event;
     return(
       <tr>
-        <td>{event.name}</td>
-        <td>{event.event_date}</td>
-        <td>{event.place}</td>
-        <td>{event.description}</td>
-        <td>
+        <td className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium">{event.name}</td>
+        <td className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium">{event.event_date}</td>
+        <td className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium">{event.place}</td>
+        <td className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium">{event.description}</td>
+        <td className="border border-emerald-500 px-4 py-2 text-emerald-600 font-medium">
+          <Button>
           <a className="btn btn-danger btn-xs"
              onClick={this.handleDelete} >
             Delete
           </a>
+          </Button>
         </td>
       </tr>
     )
